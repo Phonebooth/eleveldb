@@ -1,3 +1,11 @@
+# RELAY PROD ENG NOTE
+This repo was cloned from the basho GitHub on 1/26/2022 and then we
+force pushed commit hash 7920245fd112d2ab5c6416cf827c8f0f82b6530c to
+our clone of develop. The reason we did this is because someone rewrote
+history on the basho eleveldb git repo, and broke the ibot build, which
+referenced the above commit hash. By creating this archive here, we ensure
+we can revert to this specific commit in the future if we need to.
+
 # `eleveldb` - Erlang bindings to LevelDB datastore 
 
 [![Build Status](https://secure.travis-ci.org/basho/eleveldb.png?branch=master)](http://travis-ci.org/basho/eleveldb)
