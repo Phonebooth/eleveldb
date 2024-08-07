@@ -13,7 +13,7 @@ get-deps:
 	fi
 	if [ ! -d leveldb ]; then \
 	    git clone https://github.com/TI-Tokyo/leveldb && \
-	    (cd leveldb && git checkout $(LEVELDB_VSN)) && \
+	    (cd leveldb && git checkout $(LEVELDB_VSN) && git apply ../leveldb.patch) && \
 	    (cd leveldb && git submodule update --init); \
 	fi
 

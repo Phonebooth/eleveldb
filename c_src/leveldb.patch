@@ -1,0 +1,13 @@
+diff --git a/build_detect_platform b/build_detect_platform
+index 0f231fc..07c2db9 100755
+--- a/build_detect_platform
++++ b/build_detect_platform
+@@ -81,6 +81,8 @@ case "$TARGET_OS" in
+         PLATFORM=OS_LINUX
+         COMMON_FLAGS="-fno-builtin-memcmp -pthread -DOS_LINUX"
+         PLATFORM_LDFLAGS="-pthread -lrt"
++        PLATFORM_CCFLAGS="-std=c++11"
++        PLATFORM_CXXFLAGS="-std=c++11"
+         PORT_FILE=port/port_posix.cc
+         ;;
+     SunOS)
